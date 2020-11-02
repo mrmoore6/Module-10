@@ -38,13 +38,13 @@ class MyTestCase(unittest.TestCase):
              test_student = student_class.Student("Mike", "Moore","His", 0.0)
     def test_object_not_created_error_gpa_high(self):
         with self.assertRaises(ValueError):
-             test_student = student_class.Student("Mike", "Moore","His", 5.0)
+             test_student = student_class.Student("Mike", "Moore","History", 5.0)
     def test_object_not_created_error_gpa_low(self):
         with self.assertRaises(ValueError):
-            test_student = student_class.Student("Mike", "Moore", "His", -1.0)
+            test_student = student_class.Student("Mike", "Moore", "History", -1.0)
     def test_object_not_created_non_numeric_error_gpa(self):
         with self.assertRaises(ValueError):
-            test_student = student_class.Student("Mike", "Moore","His", "string")
+            test_student = student_class.Student("Mike", "Moore","History", "string")
 
 
 
